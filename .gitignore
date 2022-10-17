@@ -1,0 +1,6 @@
+.snunit
+.scala-build
+.bsp
+.metals
+.vscode
+/static/main.js
