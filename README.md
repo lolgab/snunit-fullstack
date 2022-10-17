@@ -52,7 +52,6 @@ Building the frontend means creating a `main.js` inside the `static` folder
 
 ## How to run
 
-Here you 
 
 ## Build the frontend
 
@@ -70,7 +69,9 @@ scala-cli package frontend -f -w -o static/main.js
 
 ### Run backend
 
+```
 snunit run --path backend --static static --port 8080 --no-runtime
+```
 
 ## Build production docker image
 
@@ -79,7 +80,7 @@ snunit run --path backend --static static --port 8080 --no-runtime
 scala-cli package frontend -f --js-mode release -o static/main.js
 # build the docker image
 snunit buildDocker --path backend --static static --port 8080 --no-runtime
-````
+```
 
 ## VSCode support
 
